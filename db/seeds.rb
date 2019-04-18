@@ -5,9 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-if breed.count == 0
+if Breed.count == 0
     Snake.names.each do |name|
-        Breed.create(name: name.downcase.strip)
+        Breed.create(name: name.downcase )
         puts "#{name} created"
     end
 end
